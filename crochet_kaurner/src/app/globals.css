@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffef9;
+  color: #333;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@layer components {
+  .container-custom {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .button-primary {
+    @apply px-6 py-3 bg-terracotta-600 text-white rounded-lg hover:bg-terracotta-700 transition-colors duration-200;
+  }
+
+  .button-secondary {
+    @apply px-6 py-3 bg-beige-200 text-gray-800 rounded-lg hover:bg-beige-300 transition-colors duration-200;
+  }
+}

@@ -1,0 +1,107 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Crochet & Handmade Aesthetic Palette
+        cream: {
+          50: "#fffef9",
+          100: "#fffdf3",
+          200: "#fffbe7",
+          300: "#fff9db",
+          400: "#fff7cf",
+          500: "#fef5c3",
+          600: "#fef3b7",
+          700: "#fef1ab",
+          800: "#fdef9f",
+          900: "#fded93",
+        },
+        beige: {
+          50: "#faf8f3",
+          100: "#f5f1e8",
+          200: "#ede8dd",
+          300: "#e5dfd2",
+          400: "#ddd7c7",
+          500: "#d5cfbc",
+          600: "#cdc7b1",
+          700: "#c5bfa6",
+          800: "#bdb79b",
+          900: "#b5af90",
+        },
+        sand: {
+          50: "#f9f6f0",
+          100: "#f3ede3",
+          200: "#ede4d6",
+          300: "#e7dbc9",
+          400: "#e1d2bc",
+          500: "#dbc9af",
+          600: "#d5c0a2",
+          700: "#cfb795",
+          800: "#c9ae88",
+          900: "#c3a57b",
+        },
+        terracotta: {
+          50: "#fdf4f0",
+          100: "#fae7df",
+          200: "#f5d9cc",
+          300: "#f0cbbb",
+          400: "#ebbda8",
+          500: "#e8b597",
+          600: "#dd9d7f",
+          700: "#d4876b",
+          800: "#c97157",
+          900: "#be5b43",
+        },
+        rust: {
+          50: "#fdf6f4",
+          100: "#fae8e4",
+          200: "#f5d9cc",
+          300: "#f0cbb8",
+          400: "#e8a294",
+          500: "#e28e7d",
+          600: "#d97d67",
+          700: "#c86951",
+          800: "#b1553f",
+          900: "#9a412d",
+        },
+        dusty: {
+          rose: "#d8a8a0",
+          mauve: "#c9a8bf",
+          sage: "#9db4a3",
+          blue: "#a8bac4",
+          green: "#a8b8a1",
+        },
+        softPastel: {
+          peach: "#f4d5c8",
+          lavender: "#e8dff0",
+          mint: "#d8f0eb",
+          butter: "#fffacd",
+          blush: "#fce4ec",
+        },
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+      },
+      spacing: {
+        128: "32rem",
+        144: "36rem",
+      },
+      borderRadius: {
+        "3xl": "1.5rem",
+      },
+      boxShadow: {
+        soft: "0 2px 8px rgba(0, 0, 0, 0.08)",
+        "soft-lg": "0 10px 25px rgba(0, 0, 0, 0.08)",
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
