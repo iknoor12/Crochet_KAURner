@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background-color: #fffef9;
-  color: #333;
+  background-color: #F2F7FA;
+  color: #5a5a5a;
   font-family: system-ui, -apple-system, sans-serif;
 }
 
@@ -24,10 +24,10 @@ body {
   }
 
   .button-primary {
-    @apply px-6 py-3 bg-terracotta-600 text-white rounded-lg hover:bg-terracotta-700 transition-colors duration-200;
+    @apply px-6 py-3 bg-dusty-blue-500 text-white rounded-lg hover:bg-dusty-blue-600 transition-colors duration-200;
   }
 
   .button-secondary {
-    @apply px-6 py-3 bg-beige-200 text-gray-800 rounded-lg hover:bg-beige-300 transition-colors duration-200;
+    @apply px-6 py-3 bg-muted-teal-200 text-gray-800 rounded-lg hover:bg-muted-teal-300 transition-colors duration-200;
   }
 }

@@ -9,14 +9,14 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-beige-900 text-gray-700 mt-16">
+    <footer className="bg-beige-500 text-gray-700 mt-16">
       {/* Main Footer Content */}
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-terracotta-500 to-rust-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-dusty-blue-500 to-muted-teal-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">C</span>
               </div>
               <span className="font-bold text-xl text-gray-800">The Crochet Kaurner</span>
@@ -29,21 +29,21 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-10 h-10 bg-terracotta-500 rounded-full flex items-center justify-center text-white hover:bg-terracotta-600 transition-colors duration-200"
+                className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
               >
                 <Instagram size={18} />
               </a>
               <a
                 href="#"
                 aria-label="Facebook"
-                className="w-10 h-10 bg-terracotta-500 rounded-full flex items-center justify-center text-white hover:bg-terracotta-600 transition-colors duration-200"
+                className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
               >
                 <Facebook size={18} />
               </a>
               <a
                 href="#"
                 aria-label="Twitter"
-                className="w-10 h-10 bg-terracotta-500 rounded-full flex items-center justify-center text-white hover:bg-terracotta-600 transition-colors duration-200"
+                className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
               >
                 <Twitter size={18} />
               </a>
@@ -55,27 +55,27 @@ export default function Footer() {
             <h3 className="font-bold text-gray-800 mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/about" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/products" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/products" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   Products
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/blog" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/faq" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   FAQ
                 </Link>
               </li>
@@ -87,22 +87,22 @@ export default function Footer() {
             <h3 className="font-bold text-gray-800 mb-4">Policies</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/privacy" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/privacy" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/terms" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link href="/shipping" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/shipping" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   Shipping Info
                 </Link>
               </li>
               <li>
-                <Link href="/returns" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Link href="/returns" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   Returns & Exchanges
                 </Link>
               </li>
@@ -114,18 +114,18 @@ export default function Footer() {
             <h3 className="font-bold text-gray-800 mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-terracotta-600 flex-shrink-0 mt-0.5" />
-                <span>123 Craft Lane, Artisan City, AC 12345</span>
+                <MapPin size={18} className="text-slate-blue-500 flex-shrink-0 mt-0.5" />
+                <span>13, Royal Green city, Hanumangarh, Rajasthan</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={18} className="text-terracotta-600 flex-shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Phone size={18} className="text-slate-blue-500 flex-shrink-0" />
+                <a href="tel:+1234567890" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   +1 (234) 567-890
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={18} className="text-terracotta-600 flex-shrink-0" />
-                <a href="mailto:hello@crochetkaurner.com" className="hover:text-terracotta-600 transition-colors duration-200">
+                <Mail size={18} className="text-slate-blue-500 flex-shrink-0" />
+                <a href="mailto:hello@crochetkaurner.com" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   hello@crochet.com
                 </a>
               </li>
@@ -146,7 +146,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-cream-100 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-terracotta-500"
+                className="flex-1 px-4 py-3 rounded-lg bg-cream-100 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-dusty-blue-500"
               />
               <button className="button-primary whitespace-nowrap">
                 Subscribe
@@ -157,7 +157,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-beige-700 bg-beige-800 py-6">
+      <div className="border-t border-beige-700 bg-beige-700 py-6">
         <div className="container-custom flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-600">
           <p>&copy; {currentYear} Crochet Kaurner. All rights reserved.</p>
           <p>Handcrafted with ❤️ and creativity</p>

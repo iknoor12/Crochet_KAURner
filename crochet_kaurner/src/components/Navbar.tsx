@@ -18,11 +18,11 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-4">
           {/* Logo/Brand */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-terracotta-500 to-rust-600 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-br from-dusty-blue-700 to-muted-teal-500 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">C</span>
             </div>
-            <span className="hidden sm:inline font-bold text-xl text-gray-800">
-              Crochet Kaurner
+            <span className="hidden sm:inline font-bold text-2xl text-gray-800 tracking-wide italic font-serif">
+              The Crochet Kaurner
             </span>
           </Link>
 
@@ -30,32 +30,32 @@ export default function Navbar() {
           <div className="hidden md:flex gap-8">
             <Link
               href="/"
-              className="text-gray-700 hover:text-terracotta-600 transition-colors duration-200 font-medium"
+              className="text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="text-gray-700 hover:text-terracotta-600 transition-colors duration-200 font-medium"
+              className="text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium"
             >
               About
             </Link>
             <Link
               href="/products"
-              className="text-gray-700 hover:text-terracotta-600 transition-colors duration-200 font-medium"
+              className="text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium"
             >
               Products
             </Link>
             <Link
               href="/contact"
-              className="text-gray-700 hover:text-terracotta-600 transition-colors duration-200 font-medium"
+              className="text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium"
             >
               Contact
             </Link>
           </div>
 
           {/* CTA Button - Desktop */}
-          <button className="hidden sm:block button-primary">
+          <button className="hidden sm:block px-6 py-3 bg-slate-blue-800 text-white rounded-lg hover:bg-slate-blue-700 transition-colors duration-200 font-semibold">
             Shop Now
           </button>
 
@@ -88,28 +88,28 @@ export default function Navbar() {
           <div className="md:hidden border-t border-beige-300 py-4 space-y-3">
             <Link
               href="/"
-              className="block text-gray-700 hover:text-terracotta-600 transition-colors duration-200 font-medium py-2"
+              className="block text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium py-2"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="block text-gray-700 hover:text-terracotta-600 transition-colors duration-200 font-medium py-2"
+              className="block text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium py-2"
               onClick={() => setIsOpen(false)}
             >
               About
             </Link>
             <Link
               href="/products"
-              className="block text-gray-700 hover:text-terracotta-600 transition-colors duration-200 font-medium py-2"
+              className="block text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium py-2"
               onClick={() => setIsOpen(false)}
             >
               Products
             </Link>
             <Link
               href="/contact"
-              className="block text-gray-700 hover:text-terracotta-600 transition-colors duration-200 font-medium py-2"
+              className="block text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium py-2"
               onClick={() => setIsOpen(false)}
             >
               Contact

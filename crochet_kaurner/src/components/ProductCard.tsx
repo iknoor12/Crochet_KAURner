@@ -124,7 +124,7 @@ export default function ProductCard({
             size={20}
             className={`transition-colors duration-200 ${
               isWishlisted
-                ? 'fill-terracotta-500 text-terracotta-500'
+                ? 'fill-dusty-blue-500 text-dusty-blue-500'
                 : 'text-gray-600'
             }`}
           />
@@ -134,7 +134,7 @@ export default function ProductCard({
       {/* Content Container */}
       <div className="flex-1 p-4 flex flex-col gap-3">
         {/* Title */}
-        <h3 className="text-sm font-semibold text-gray-800 line-clamp-2 hover:text-terracotta-600 transition-colors cursor-pointer">
+        <h3 className="text-sm font-semibold text-gray-800 line-clamp-2 hover:text-dusty-blue-500 transition-colors cursor-pointer">
           {title}
         </h3>
 
@@ -157,7 +157,7 @@ export default function ProductCard({
         <button
           onClick={handleAddToCart}
           disabled={isAddingToCart}
-          className="mt-auto w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-terracotta-500 to-rust-600 text-white rounded-lg font-semibold text-sm hover:from-terracotta-600 hover:to-rust-700 transition-all duration-200 disabled:opacity-75 shadow-soft hover:shadow-md"
+          className="mt-auto w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-dusty-blue-500 to-muted-teal-500 text-white rounded-lg font-semibold text-sm hover:from-dusty-blue-600 hover:to-muted-teal-600 transition-all duration-200 disabled:opacity-75 shadow-soft hover:shadow-md"
         >
           <ShoppingCart size={18} />
           <span>{isAddingToCart ? 'Added!' : 'Add to Cart'}</span>

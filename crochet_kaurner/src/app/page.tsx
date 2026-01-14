@@ -101,18 +101,18 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-cream-100 via-softPastel-peach to-cream-50 py-20 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-cream-50 via-dusty-blue-300 to-cream-50 py-20 lg:py-32">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Content */}
             <div className="space-y-6 z-10">
               <div className="space-y-4">
-                <p className="text-terracotta-600 font-semibold text-lg uppercase tracking-wide">
-                  Welcome to Crochet Kaurner
+                <p className="text-dusty-blue-600 font-semibold text-2xl uppercase tracking-wide italic font-serif">
+                  Welcome to The Crochet Kaurner
                 </p>
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 leading-tight">
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-800 leading-tight italic font-serif">
                   Handmade With{' '}
-                  <span className="bg-gradient-to-r from-terracotta-500 to-rust-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-dusty-blue-600 to-muted-teal-500 bg-clip-text text-transparent">
                     Love & Passion
                   </span>
                 </h1>
@@ -124,10 +124,10 @@ export default function Home() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="button-primary text-lg">
+                <button className="px-6 py-3 bg-slate-blue-800 text-white rounded-lg hover:bg-slate-blue-700 transition-colors duration-200 text-lg font-semibold">
                   Shop Now
                 </button>
-                <button className="button-secondary text-lg">
+                <button className="px-6 py-3 bg-white text-gray-800 rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg font-semibold">
                   Learn Our Story
                 </button>
               </div>
@@ -135,24 +135,24 @@ export default function Home() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-8 border-t border-beige-300">
                 <div>
-                  <p className="text-3xl font-bold text-terracotta-600">500+</p>
-                  <p className="text-sm text-gray-600">Creations Made</p>
+                  <p className="text-3xl font-bold text-dusty-blue-800">500+</p>
+                  <p className="text-m text-gray-600">Creations Made</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-terracotta-600">800+</p>
-                  <p className="text-sm text-gray-600">Happy Customers</p>
+                  <p className="text-3xl font-bold text-dusty-blue-800">800+</p>
+                  <p className="text-m text-gray-600">Happy Customers</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-terracotta-600">5★</p>
-                  <p className="text-sm text-gray-600">Customer Rating</p>
+                  <p className="text-3xl font-bold text-dusty-blue-800">5★</p>
+                  <p className="text-m text-gray-600">Customer Rating</p>
                 </div>
               </div>
             </div>
 
             {/* Hero Image */}
             <div className="relative h-96 lg:h-full min-h-96">
-              <div className="absolute inset-0 bg-gradient-to-br from-terracotta-200 to-rust-300 rounded-3xl shadow-soft-lg"></div>
-              <div className="absolute inset-0 bg-gradient-to-tl from-softPastel-peach to-cream-100 rounded-3xl shadow-soft opacity-50"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-dusty-blue-200 to-muted-teal-200 rounded-3xl shadow-soft-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-tl from-dusty-blue-200 to-cream-100 rounded-3xl shadow-soft opacity-50"></div>
               <div className="absolute inset-8 bg-cream-100 rounded-2xl flex items-center justify-center text-gray-400 text-center p-8">
                 <div className="text-center">
                   <span className="text-6xl mb-4 block">🧶</span>
@@ -198,7 +198,7 @@ export default function Home() {
                   <p className="text-gray-600 text-sm">
                     {category.description}
                   </p>
-                  <div className="mt-6 text-terracotta-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="mt-6 text-dusty-blue-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Explore →
                   </div>
                 </div>
@@ -212,7 +212,7 @@ export default function Home() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <p className="text-terracotta-600 font-semibold text-lg uppercase tracking-wide mb-2">
+            <p className="text-dusty-blue-500 font-semibold text-lg uppercase tracking-wide mb-2">
               Our Best Sellers
             </p>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
@@ -236,7 +236,7 @@ export default function Home() {
 
           {/* View All Button */}
           <div className="text-center mt-12">
-            <button className="px-8 py-3 bg-gradient-to-r from-terracotta-500 to-rust-600 text-white rounded-lg font-bold text-lg hover:from-terracotta-600 hover:to-rust-700 transition-all duration-200 shadow-soft hover:shadow-md">
+            <button className="px-8 py-3 bg-gradient-to-r from-dusty-blue-500 to-muted-teal-500 text-white rounded-lg font-bold text-lg hover:from-dusty-blue-600 hover:to-muted-teal-600 transition-all duration-200 shadow-soft hover:shadow-md">
               View All Products
             </button>
           </div>
@@ -258,7 +258,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Feature 1 */}
             <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-terracotta-500 to-rust-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-500 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
                 🧵
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Handcrafted</h3>
@@ -269,7 +269,7 @@ export default function Home() {
 
             {/* Feature 2 */}
             <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-terracotta-500 to-rust-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-500 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
                 🌿
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Quality Materials</h3>
@@ -280,7 +280,7 @@ export default function Home() {
 
             {/* Feature 3 */}
             <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-terracotta-500 to-rust-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-500 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
                 💎
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Unique Designs</h3>
@@ -291,7 +291,7 @@ export default function Home() {
 
             {/* Feature 4 */}
             <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-terracotta-500 to-rust-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-500 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
                 ⚡
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Fast Shipping</h3>
@@ -304,7 +304,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-r from-terracotta-500 to-rust-600">
+      <section className="py-16 lg:py-24 bg-gradient-to-r from-slate-blue-500 to-slate-blue-600">
         <div className="container-custom text-center space-y-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-white">
             Ready to Find Your Perfect Crochet Piece?
@@ -312,7 +312,7 @@ export default function Home() {
           <p className="text-xl text-cream-100 max-w-2xl mx-auto">
             Browse our complete collection and discover something truly special today.
           </p>
-          <button className="inline-block px-8 py-4 bg-white text-terracotta-600 rounded-lg font-bold text-lg hover:bg-cream-50 transition-colors duration-200 shadow-soft hover:shadow-md">
+          <button className="inline-block px-8 py-4 bg-white text-dusty-blue-500 rounded-lg font-bold text-lg hover:bg-cream-50 transition-colors duration-200 shadow-soft hover:shadow-md">
             Shop Now
           </button>
         </div>
