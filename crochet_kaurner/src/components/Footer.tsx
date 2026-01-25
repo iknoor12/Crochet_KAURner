@@ -24,7 +24,7 @@ export default function Footer() {
             <p className="text-sm text-gray-600">
               Handmade crochet creations crafted with love and passion. Each piece tells a story.
             </p>
-            {/* Social Links */}
+            {/* Social Links
             <div className="flex gap-4 pt-4">
               <a
                 href="#"
@@ -47,7 +47,7 @@ export default function Footer() {
               >
                 <Twitter size={18} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -72,11 +72,6 @@ export default function Footer() {
               <li>
                 <Link href="/blog" className="hover:text-dusty-blue-500 transition-colors duration-200">
                   Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="hover:text-dusty-blue-500 transition-colors duration-200">
-                  FAQ
                 </Link>
               </li>
             </ul>
@@ -115,43 +110,39 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-slate-blue-500 flex-shrink-0 mt-0.5" />
-                <span>13, Royal Green city, Hanumangarh, Rajasthan</span>
+                <span>Hanumangarh, Rajasthan</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-slate-blue-500 flex-shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-dusty-blue-500 transition-colors duration-200">
-                  +1 (234) 567-890
+                <a href="tel:+91 96605-29835" className="hover:text-dusty-blue-500 transition-colors duration-200">
+                  +91 96605-29835
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Mail size={18} className="text-slate-blue-500 flex-shrink-0" />
-                <a href="mailto:hello@crochetkaurner.com" className="hover:text-dusty-blue-500 transition-colors duration-200">
-                  hello@crochet.com
+              {/* Social Links */}
+              <div className="flex gap-4 pt-4">
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
+                >
+                  <Instagram size={18} />
                 </a>
-              </li>
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
+                >
+                  <Facebook size={18} />
+                </a>
+                <a
+                  href="#"
+                  aria-label="Twitter"
+                  className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
+                >
+                  <Twitter size={18} />
+                </a>
+              </div>
             </ul>
-          </div>
-        </div>
-
-        {/* Newsletter Signup */}
-        <div className="mt-12 pt-8 border-t border-beige-700">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="font-bold text-gray-800 text-lg mb-2">Subscribe to Our Newsletter</h3>
-              <p className="text-sm text-gray-600">
-                Get updates on new creations, special offers, and crochet tips delivered to your inbox.
-              </p>
-            </div>
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-cream-100 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-dusty-blue-500"
-              />
-              <button className="button-primary whitespace-nowrap">
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
       </div>

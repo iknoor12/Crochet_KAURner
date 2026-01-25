@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import ProductCard from '@/components/ProductCard';
 
 // Mock product data
@@ -124,9 +125,12 @@ export default function Home() {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="px-6 py-3 bg-slate-blue-800 text-white rounded-lg hover:bg-slate-blue-700 transition-colors duration-200 text-lg font-semibold">
+                <Link
+                  href="/products"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-slate-blue-800 text-white rounded-lg hover:bg-slate-blue-700 transition-colors duration-200 text-lg font-semibold"
+                >
                   Shop Now
-                </button>
+                </Link>
                 <button className="px-6 py-3 bg-white text-gray-800 rounded-lg hover:bg-gray-100 transition-colors duration-200 text-lg font-semibold">
                   Learn Our Story
                 </button>
@@ -236,9 +240,12 @@ export default function Home() {
 
           {/* View All Button */}
           <div className="text-center mt-12">
-            <button className="px-8 py-3 bg-gradient-to-r from-dusty-blue-500 to-muted-teal-500 text-white rounded-lg font-bold text-lg hover:from-dusty-blue-600 hover:to-muted-teal-600 transition-all duration-200 shadow-soft hover:shadow-md">
+            <Link
+              href="/products"
+              className="inline-block px-8 py-3 bg-gradient-to-r from-dusty-blue-500 to-muted-teal-500 text-white rounded-lg font-bold text-lg hover:from-dusty-blue-600 hover:to-muted-teal-600 transition-all duration-200 shadow-soft hover:shadow-md"
+            >
               View All Products
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -312,9 +319,12 @@ export default function Home() {
           <p className="text-xl text-cream-100 max-w-2xl mx-auto">
             Browse our complete collection and discover something truly special today.
           </p>
-          <button className="inline-block px-8 py-4 bg-white text-dusty-blue-500 rounded-lg font-bold text-lg hover:bg-cream-50 transition-colors duration-200 shadow-soft hover:shadow-md">
+          <Link
+            href="/products"
+            className="inline-block px-8 py-4 bg-white text-dusty-blue-500 rounded-lg font-bold text-lg hover:bg-cream-50 transition-colors duration-200 shadow-soft hover:shadow-md"
+          >
             Shop Now
-          </button>
+          </Link>
         </div>
       </section>
     </>

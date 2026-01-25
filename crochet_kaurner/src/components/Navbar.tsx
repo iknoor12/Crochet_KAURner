@@ -55,9 +55,12 @@ export default function Navbar() {
           </div>
 
           {/* CTA Button - Desktop */}
-          <button className="hidden sm:block px-6 py-3 bg-slate-blue-800 text-white rounded-lg hover:bg-slate-blue-700 transition-colors duration-200 font-semibold">
+          <Link
+            href="/products"
+            className="hidden sm:block px-6 py-3 bg-slate-blue-800 text-white rounded-lg hover:bg-slate-blue-700 transition-colors duration-200 font-semibold"
+          >
             Shop Now
-          </button>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -114,9 +117,13 @@ export default function Navbar() {
             >
               Contact
             </Link>
-            <button className="w-full button-primary mt-4">
+            <Link
+              href="/products"
+              className="block w-full button-primary mt-4 text-center"
+              onClick={() => setIsOpen(false)}
+            >
               Shop Now
-            </button>
+            </Link>
           </div>
         )}
       </div>
