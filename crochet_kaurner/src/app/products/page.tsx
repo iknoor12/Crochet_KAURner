@@ -205,7 +205,7 @@ export default function ProductsPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="py-12 lg:py-16 bg-gradient-to-r from-dusty-blue-500 to-muted-teal-500">
+      <section className="py-12 lg:py-16 bg-gradient-to-r bg-dusty-blue-700">
         <div className="container-custom">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
             All Products
@@ -234,7 +234,7 @@ export default function ProductsPage() {
                       onClick={() => setSelectedCategory(category.name)}
                       className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-3 ${
                         selectedCategory === category.name
-                          ? 'bg-gradient-to-r from-dusty-blue-500 to-muted-teal-500 text-white shadow-soft'
+                          ? 'bg-gradient-to-r from-dusty-blue-500 to-muted-teal-600 text-white shadow-soft'
                           : 'bg-white text-gray-700 hover:bg-beige-100'
                       }`}
                     >
