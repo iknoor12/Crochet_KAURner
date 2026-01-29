@@ -2,11 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { ShoppingCart } from 'lucide-react';
+import { useCart } from '@/contexts/CartContext';
 
 /** @jsxImportSource react */
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { getCartCount } = useCart();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -54,36 +57,66 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* CTA Button - Desktop */}
-          <Link
-            href="/products"
-            className="hidden sm:block px-6 py-3 bg-slate-blue-800 text-white rounded-lg hover:bg-slate-blue-700 transition-colors duration-200 font-semibold"
-          >
-            Shop Now
-          </Link>
+          {/* Basket Icon + Shop Now Button - Desktop */}
+          <div className="hidden sm:flex items-center gap-4">
+            <Link
+              href="/cart"
+              className="relative inline-flex items-center justify-center text-gray-700 hover:text-dusty-blue-600 transition-colors duration-200"
+              aria-label="View basket"
+            >
+              <ShoppingCart size={24} />
+              {getCartCount() > 0 && (
+                <span className="absolute -top-3 -right-3 bg-dusty-blue-600 text-white text-xs font-bold rounded-full min-w-[1.25rem] h-5 px-1 flex items-center justify-center">
+                  {getCartCount()}
+                </span>
+              )}
+            </Link>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden flex flex-col gap-1.5 w-8 h-8 focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <span
-              className={`h-0.5 w-full bg-gray-800 transition-all duration-300 ${
-                isOpen ? 'rotate-45 translate-y-2' : ''
-              }`}
-            ></span>
-            <span
-              className={`h-0.5 w-full bg-gray-800 transition-all duration-300 ${
-                isOpen ? 'opacity-0' : ''
-              }`}
-            ></span>
-            <span
-              className={`h-0.5 w-full bg-gray-800 transition-all duration-300 ${
-                isOpen ? '-rotate-45 -translate-y-2' : ''
-              }`}
-            ></span>
-          </button>
+            <Link
+              href="/products"
+              className="px-6 py-3 bg-slate-blue-800 text-white rounded-lg hover:bg-slate-blue-700 transition-colors duration-200 font-semibold"
+            >
+              Shop Now
+            </Link>
+          </div>
+
+          {/* Mobile Actions */}
+          <div className="md:hidden flex items-center gap-3">
+            <Link
+              href="/cart"
+              className="relative inline-flex items-center justify-center text-gray-700 hover:text-dusty-blue-600 transition-colors duration-200"
+              aria-label="View basket"
+            >
+              <ShoppingCart size={20} />
+              {getCartCount() > 0 && (
+                <span className="absolute -top-3 -right-3 bg-dusty-blue-600 text-white text-xs font-bold rounded-full min-w-[1.25rem] h-5 px-1 flex items-center justify-center">
+                  {getCartCount()}
+                </span>
+              )}
+            </Link>
+
+            <button
+              onClick={toggleMenu}
+              className="flex flex-col gap-1.5 w-8 h-8 focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <span
+                className={`h-0.5 w-full bg-gray-800 transition-all duration-300 ${
+                  isOpen ? 'rotate-45 translate-y-2' : ''
+                }`}
+              ></span>
+              <span
+                className={`h-0.5 w-full bg-gray-800 transition-all duration-300 ${
+                  isOpen ? 'opacity-0' : ''
+                }`}
+              ></span>
+              <span
+                className={`h-0.5 w-full bg-gray-800 transition-all duration-300 ${
+                  isOpen ? '-rotate-45 -translate-y-2' : ''
+                }`}
+              ></span>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
