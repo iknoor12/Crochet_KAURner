@@ -24,30 +24,6 @@ export default function Footer() {
             <p className="text-sm text-gray-600">
               Handmade crochet creations crafted with love and passion. Each piece tells a story.
             </p>
-            {/* Social Links
-            <div className="flex gap-4 pt-4">
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
-              >
-                <Instagram size={18} />
-              </a>
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
-              >
-                <Facebook size={18} />
-              </a>
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="w-10 h-10 bg-slate-blue-500 rounded-full flex items-center justify-center text-white hover:bg-slate-blue-600 transition-colors duration-200"
-              >
-                <Twitter size={18} />
-              </a>
-            </div> */}
           </div>
 
           {/* Quick Links */}

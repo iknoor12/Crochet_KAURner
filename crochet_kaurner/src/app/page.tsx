@@ -202,7 +202,7 @@ export default function Home() {
                   <p className="text-gray-600 text-sm">
                     {category.description}
                   </p>
-                  <div className="mt-6 text-dusty-blue-500 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="mt-6 text-dusty-blue-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Explore →
                   </div>
                 </div>
@@ -216,7 +216,7 @@ export default function Home() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <p className="text-dusty-blue-500 font-semibold text-lg uppercase tracking-wide mb-2">
+            <p className="text-dusty-blue-500 font-semibold text-xl uppercase tracking-wide mb-2">
               Our Best Sellers
             </p>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
@@ -265,7 +265,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Feature 1 */}
             <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-500 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-400 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
                 🧵
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Handcrafted</h3>
@@ -276,7 +276,7 @@ export default function Home() {
 
             {/* Feature 2 */}
             <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-500 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-400 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
                 🌿
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Quality Materials</h3>
@@ -287,7 +287,7 @@ export default function Home() {
 
             {/* Feature 3 */}
             <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-500 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-400 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
                 💎
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Unique Designs</h3>
@@ -298,7 +298,7 @@ export default function Home() {
 
             {/* Feature 4 */}
             <div className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-soft-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-500 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
+              <div className="w-12 h-12 bg-gradient-to-br from-slate-blue-400 to-slate-blue-600 rounded-lg flex items-center justify-center mb-4 text-2xl">
                 ⚡
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">Fast Shipping</h3>
