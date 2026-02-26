@@ -2,188 +2,9 @@
 
 import { useState } from 'react';
 import ProductCard from '@/components/ProductCard';
+import { productCatalog } from '@/data/products';
 
-// Extended product data with categories
-const allProducts = [
-  // Wearables
-  {
-    id: '1',
-    title: 'Cozy Chunky Knit Blanket',
-    price: 89.99,
-    originalPrice: 129.99,
-    rating: 4.8,
-    reviewCount: 342,
-    category: 'Wearables',
-  },
-  {
-    id: '2',
-    title: 'Soft Wool Winter Scarf',
-    price: 45.99,
-    rating: 4.7,
-    reviewCount: 289,
-    category: 'Wearables',
-  },
-  {
-    id: '3',
-    title: 'Warm Knitted Hat',
-    price: 34.99,
-    originalPrice: 49.99,
-    rating: 4.8,
-    reviewCount: 156,
-    category: 'Wearables',
-  },
-  {
-    id: '4',
-    title: 'Cozy Cable Knit Sweater',
-    price: 79.99,
-    rating: 4.6,
-    reviewCount: 198,
-    category: 'Wearables',
-  },
-  {
-    id: '5',
-    title: 'Elegant Winter Gloves',
-    price: 29.99,
-    originalPrice: 39.99,
-    rating: 4.9,
-    reviewCount: 234,
-    category: 'Wearables',
-  },
-
-  // Home Decor
-  {
-    id: '6',
-    title: 'Decorative Wall Hanging',
-    price: 55.99,
-    originalPrice: 79.99,
-    rating: 4.8,
-    reviewCount: 124,
-    category: 'Home Decor',
-  },
-  {
-    id: '7',
-    title: 'Rainbow Baby Blanket',
-    price: 65.99,
-    rating: 4.9,
-    reviewCount: 401,
-    category: 'Home Decor',
-  },
-  {
-    id: '8',
-    title: 'Soft Throw Pillow',
-    price: 49.99,
-    originalPrice: 69.99,
-    rating: 4.7,
-    reviewCount: 267,
-    category: 'Home Decor',
-  },
-  {
-    id: '9',
-    title: 'Mandala Dreamcatcher',
-    price: 59.99,
-    rating: 4.6,
-    reviewCount: 145,
-    category: 'Home Decor',
-  },
-  {
-    id: '10',
-    title: 'Boho Macramé Tapestry',
-    price: 72.99,
-    originalPrice: 99.99,
-    rating: 4.8,
-    reviewCount: 201,
-    category: 'Home Decor',
-  },
-
-  // Toys & Gifts
-  {
-    id: '11',
-    title: 'Handmade Amigurumi Animals Set',
-    price: 34.99,
-    rating: 4.6,
-    reviewCount: 218,
-    category: 'Toys & Gifts',
-  },
-  {
-    id: '12',
-    title: 'Cute Amigurumi Dinosaur',
-    price: 19.99,
-    rating: 4.9,
-    reviewCount: 287,
-    category: 'Toys & Gifts',
-  },
-  {
-    id: '13',
-    title: 'Soft Bunny Stuffed Toy',
-    price: 24.99,
-    originalPrice: 35.99,
-    rating: 4.7,
-    reviewCount: 156,
-    category: 'Toys & Gifts',
-  },
-  {
-    id: '14',
-    title: 'Rainbow Amigurumi Set',
-    price: 44.99,
-    rating: 4.8,
-    reviewCount: 312,
-    category: 'Toys & Gifts',
-  },
-  {
-    id: '15',
-    title: 'Baby Gift Bundle',
-    price: 59.99,
-    originalPrice: 84.99,
-    rating: 4.9,
-    reviewCount: 423,
-    category: 'Toys & Gifts',
-  },
-
-  // Accessories
-  {
-    id: '16',
-    title: 'Elegant Baby Booties',
-    price: 24.99,
-    originalPrice: 35.99,
-    rating: 4.9,
-    reviewCount: 156,
-    category: 'Accessories',
-  },
-  {
-    id: '17',
-    title: 'Cozy Coffee Cup Cozy',
-    price: 12.99,
-    rating: 4.5,
-    reviewCount: 89,
-    category: 'Accessories',
-  },
-  {
-    id: '18',
-    title: 'Handmade Boho Bag',
-    price: 59.99,
-    originalPrice: 89.99,
-    rating: 4.7,
-    reviewCount: 267,
-    category: 'Accessories',
-  },
-  {
-    id: '19',
-    title: 'Colorful Socks Pack',
-    price: 22.99,
-    rating: 4.6,
-    reviewCount: 178,
-    category: 'Accessories',
-  },
-  {
-    id: '20',
-    title: 'Chunky Knit Phone Pouch',
-    price: 29.99,
-    originalPrice: 42.99,
-    rating: 4.8,
-    reviewCount: 134,
-    category: 'Accessories',
-  },
-];
+const allProducts = productCatalog;
 
 const categories = [
   { id: 1, name: 'All Products', icon: '🎨' },
@@ -205,34 +26,34 @@ export default function ProductsPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="py-12 lg:py-16 bg-gradient-to-r bg-dusty-blue-700">
+      <section className="py-10 sm:py-12 lg:py-16 bg-gradient-to-r bg-dusty-blue-700">
         <div className="container-custom">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4">
             All Products
           </h1>
-          <p className="text-lg text-cream-100">
+          <p className="text-base sm:text-lg text-cream-100">
             Browse our complete collection of handmade crochet items
           </p>
         </div>
       </section>
 
       {/* Products Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Sidebar - Categories Filter */}
             <aside className="lg:col-span-1">
-              <div className="bg-cream-50 rounded-2xl p-6 shadow-soft sticky top-20">
-                <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              <div className="bg-cream-50 rounded-2xl p-4 sm:p-6 shadow-soft lg:sticky lg:top-20">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6">
                   Categories
                 </h2>
 
-                <div className="space-y-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-3">
                   {categories.map((category) => (
                     <button
                       key={category.id}
                       onClick={() => setSelectedCategory(category.name)}
-                      className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-3 ${
+                      className={`w-full text-left px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg font-medium text-sm sm:text-base transition-all duration-200 flex items-center gap-2 sm:gap-3 ${
                         selectedCategory === category.name
                           ? 'bg-gradient-to-r from-dusty-blue-500 to-muted-teal-600 text-white shadow-soft'
                           : 'bg-white text-gray-700 hover:bg-beige-100'
@@ -245,7 +66,7 @@ export default function ProductsPage() {
                 </div>
 
                 {/* Product Count */}
-                <div className="mt-8 p-4 bg-white rounded-lg border-2 border-beige-300">
+                <div className="mt-6 sm:mt-8 p-4 bg-white rounded-lg border-2 border-beige-300">
                   <p className="text-sm text-gray-600">Showing</p>
                   <p className="text-3xl font-bold text-dusty-blue-600">
                     {filteredProducts.length}
@@ -258,8 +79,8 @@ export default function ProductsPage() {
             {/* Main Content - Products Grid */}
             <div className="lg:col-span-3">
               {/* Result Info */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-800">
+              <div className="mb-6 sm:mb-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
                   {selectedCategory === 'All Products'
                     ? 'All Products'
                     : selectedCategory}

@@ -38,29 +38,29 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-cream-50 to-white">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-dusty-blue-100 to-muted-teal-100">
+      <section className="py-12 sm:py-16 md:py-24 bg-gradient-to-r from-dusty-blue-100 to-muted-teal-100">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
               Get in Touch
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
               Have a question or custom order request? We'd love to hear from you!
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-20">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-1 space-y-8">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
                   Contact Information
                 </h2>
-                <p className="text-gray-600 mb-8">
+                <p className="text-gray-600 mb-6 sm:mb-8">
                   Reach out through any of these channels. We typically respond within 24-48 hours.
                 </p>
               </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <a 
                       href="mailto:hello@crochetkaurner.com" 
-                      className="text-dusty-blue-600 hover:text-dusty-blue-700 transition-colors"
+                      className="text-dusty-blue-600 hover:text-dusty-blue-700 transition-colors break-all"
                     >
                       hello@crochetkaurner.com
                     </a>
@@ -161,10 +161,10 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl shadow-soft p-8 md:p-10">
+              <div className="bg-white rounded-2xl shadow-soft p-5 sm:p-8 md:p-10">
                 <div className="flex items-center gap-3 mb-6">
-                  <MessageCircle className="w-8 h-8 text-dusty-blue-600" />
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  <MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-dusty-blue-600" />
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
                     Send Us a Message
                   </h2>
                 </div>
@@ -177,8 +177,8 @@ export default function ContactPage() {
                   </div>
                 )}
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+                <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+                  <div className="grid md:grid-cols-2 gap-5 sm:gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
                         Your Name *
@@ -254,7 +254,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full md:w-auto px-8 py-4 bg-dusty-blue-600 text-white rounded-lg hover:bg-dusty-blue-700 transition-colors duration-200 font-semibold text-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full md:w-auto px-8 py-3.5 sm:py-4 bg-dusty-blue-600 text-white rounded-lg hover:bg-dusty-blue-700 transition-colors duration-200 font-semibold text-base sm:text-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? (
                         <>
@@ -281,10 +281,10 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 md:py-20 bg-cream-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-cream-50">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
               Frequently Asked Questions
             </h2>
             <div className="space-y-6">

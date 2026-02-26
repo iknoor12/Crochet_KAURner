@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useCart } from '@/contexts/CartContext';
 import { Trash2, ShoppingCart } from 'lucide-react';
+import { formatINR } from '@/utils/currency';
 
 /** @jsxImportSource react */
 
@@ -10,14 +11,14 @@ export default function CartPage() {
   const { items, removeFromCart, updateQuantity, clearCart, getTotalPrice } = useCart();
 
   return (
-    <div className="min-h-screen bg-cream-50 py-16 lg:py-24">
+    <div className="min-h-screen bg-cream-50 py-10 sm:py-16 lg:py-24">
       <div className="container-custom">
         {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4 italic font-serif">
+        <div className="mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-3 sm:mb-4 italic font-serif">
             Your Basket
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-base sm:text-lg text-gray-600">
             Review your selected items and proceed to checkout
           </p>
         </div>
@@ -40,12 +41,12 @@ export default function CartPage() {
             </Link>
           </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Products Section */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl shadow-soft p-6 lg:p-8">
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-2xl font-bold text-gray-800">
+              <div className="bg-white rounded-2xl shadow-soft p-4 sm:p-6 lg:p-8">
+                <div className="flex items-center justify-between mb-5 sm:mb-6">
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
                     Items in Basket ({items.length})
                   </h2>
                 </div>
@@ -70,18 +71,18 @@ export default function CartPage() {
                       </div>
 
                       {/* Product Details */}
-                      <div className="flex-1 flex flex-col justify-between">
+                      <div className="flex-1 flex flex-col justify-between min-w-0">
                         <div>
-                          <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                          <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 line-clamp-2">
                             {item.title}
                           </h3>
                           <p className="text-dusty-blue-600 font-semibold">
-                            ${item.price.toFixed(2)} each
+                            {formatINR(item.price)} each
                           </p>
                         </div>
 
                         {/* Quantity Controls */}
-                        <div className="flex items-center gap-3 mt-4">
+                        <div className="flex flex-wrap items-center gap-3 mt-4">
                           <label className="text-sm font-medium text-gray-700">
                             Quantity:
                           </label>
@@ -112,16 +113,16 @@ export default function CartPage() {
                       </div>
 
                       {/* Total & Remove */}
-                      <div className="flex flex-col items-end justify-between sm:w-32">
-                        <div className="text-right">
+                      <div className="flex flex-row sm:flex-col items-center sm:items-end justify-between gap-4 sm:gap-0 sm:w-32">
+                        <div className="text-left sm:text-right">
                           <p className="text-xs text-gray-500 mb-1">Subtotal</p>
-                          <p className="text-2xl font-bold text-gray-800">
-                            ${(item.price * item.quantity).toFixed(2)}
+                          <p className="text-xl sm:text-2xl font-bold text-gray-800">
+                            {formatINR(item.price * item.quantity)}
                           </p>
                         </div>
                         <button
                           onClick={() => removeFromCart(item.id)}
-                          className="flex items-center gap-1 text-red-500 hover:text-red-700 transition-colors font-semibold text-sm mt-4"
+                          className="flex items-center gap-1 text-red-500 hover:text-red-700 transition-colors font-semibold text-sm sm:mt-4"
                           aria-label={`Remove ${item.title}`}
                         >
                           <Trash2 size={16} />
@@ -152,7 +153,7 @@ export default function CartPage() {
                 <div className="space-y-4 mb-6 pb-6 border-b border-beige-200">
                   <div className="flex justify-between text-gray-700">
                     <span>Subtotal ({items.length} items)</span>
-                    <span className="font-semibold">${getTotalPrice().toFixed(2)}</span>
+                    <span className="font-semibold">{formatINR(getTotalPrice())}</span>
                   </div>
                   <div className="flex justify-between text-gray-700">
                     <span>Shipping</span>
@@ -167,7 +168,7 @@ export default function CartPage() {
                 <div className="flex justify-between items-center mb-6">
                   <span className="text-lg font-bold text-gray-800">Total</span>
                   <span className="text-3xl font-bold text-dusty-blue-600">
-                    ${getTotalPrice().toFixed(2)}
+                    {formatINR(getTotalPrice())}
                   </span>
                 </div>
 

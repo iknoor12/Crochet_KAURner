@@ -75,6 +75,24 @@ The website is fully responsive with breakpoints for:
 - Tablet (md: 768px, lg: 1024px)
 - Desktop (xl: 1280px, 2xl: 1536px)
 
+## 🧵 Add Your Own Products (Name + INR + Image)
+
+Use this workflow whenever you create a new item:
+
+1. Add product image file to [public/products](public/products)
+2. Open [src/data/products.ts](src/data/products.ts)
+3. Add a new object in `productCatalog` with:
+  - `id` (unique string)
+  - `title`
+  - `price` (in INR)
+  - `category` (`Wearables`, `Home Decor`, `Toys & Gifts`, `Accessories`)
+  - `image` (example: `/products/my-new-item.jpg`)
+4. Optionally set `featured: true` to show it on home page best-sellers
+
+Notes:
+- Currency is now formatted as INR automatically across product cards and cart.
+- If the image path is wrong or missing, a placeholder image block is shown.
+
 ## 🎯 Key Features
 
 ### Navbar

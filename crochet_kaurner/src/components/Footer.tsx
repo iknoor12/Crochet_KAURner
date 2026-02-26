@@ -9,9 +9,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-beige-500 text-gray-700 mt-16">
+    <footer className="bg-beige-500 text-gray-700 mt-12 sm:mt-16">
       {/* Main Footer Content */}
-      <div className="container-custom py-16">
+      <div className="container-custom py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
@@ -19,9 +19,9 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-br from-dusty-blue-500 to-muted-teal-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">C</span>
               </div>
-              <span className="font-bold text-xl text-gray-800">The Crochet Kaurner</span>
+              <span className="font-bold text-lg sm:text-xl text-gray-800">The Crochet Kaurner</span>
             </div>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 max-w-xs">
               Handmade crochet creations crafted with love and passion. Each piece tells a story.
             </p>
           </div>
@@ -90,12 +90,12 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-slate-blue-500 flex-shrink-0" />
-                <a href="tel:+91 96605-29835" className="hover:text-dusty-blue-500 transition-colors duration-200">
+                <a href="tel:+91 96605-29835" className="hover:text-dusty-blue-500 transition-colors duration-200 break-all">
                   +91 96605-29835
                 </a>
               </li>
               {/* Social Links */}
-              <div className="flex gap-4 pt-4">
+              <li className="flex gap-4 pt-4">
                 <a
                   href="#"
                   aria-label="Instagram"
@@ -117,7 +117,7 @@ export default function Footer() {
                 >
                   <Twitter size={18} />
                 </a>
-              </div>
+              </li>
             </ul>
           </div>
         </div>

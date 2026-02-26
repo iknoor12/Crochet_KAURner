@@ -18,19 +18,19 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-cream-100 shadow-soft">
       <div className="container-custom">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-3 sm:py-4">
           {/* Logo/Brand */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-gradient-to-br from-dusty-blue-700 to-muted-teal-500 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">C</span>
             </div>
-            <span className="hidden sm:inline font-bold text-2xl text-gray-800 tracking-wide italic font-serif">
+            <span className="hidden sm:inline font-bold text-lg md:text-xl xl:text-2xl text-gray-800 tracking-wide italic font-serif">
               The Crochet Kaurner
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-8">
+          <div className="hidden lg:flex gap-6 xl:gap-8">
             <Link
               href="/"
               className="text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium"
@@ -58,7 +58,7 @@ export default function Navbar() {
           </div>
 
           {/* Basket Icon + Shop Now Button - Desktop */}
-          <div className="hidden sm:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/cart"
               className="relative inline-flex items-center justify-center text-gray-700 hover:text-dusty-blue-600 transition-colors duration-200"
@@ -81,7 +81,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Actions */}
-          <div className="md:hidden flex items-center gap-3">
+          <div className="lg:hidden flex items-center gap-3">
             <Link
               href="/cart"
               className="relative inline-flex items-center justify-center text-gray-700 hover:text-dusty-blue-600 transition-colors duration-200"
@@ -121,7 +121,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden border-t border-beige-300 py-4 space-y-3">
+          <div className="lg:hidden border-t border-beige-300 py-4 space-y-3">
             <Link
               href="/"
               className="block text-gray-700 hover:text-dusty-blue-500 transition-colors duration-200 font-medium py-2"

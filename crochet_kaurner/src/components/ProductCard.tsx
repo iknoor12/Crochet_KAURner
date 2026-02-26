@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { ShoppingCart, Heart } from 'lucide-react';
 import { useCart } from '@/contexts/CartContext';
+import { formatINR } from '@/utils/currency';
 
 /** @jsxImportSource react */
 
@@ -117,7 +118,7 @@ export default function ProductCard({
         {/* Wishlist Button */}
         <button
           onClick={handleWishlist}
-          className="absolute top-3 left-3 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-gray-100 transition-all duration-200 opacity-0 group-hover:opacity-100"
+          className="absolute top-3 left-3 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-gray-100 transition-all duration-200 opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
           aria-label="Add to wishlist"
         >
           <Heart
@@ -132,9 +133,9 @@ export default function ProductCard({
       </div>
 
       {/* Content Container */}
-      <div className="flex-1 p-4 flex flex-col gap-3">
+      <div className="flex-1 p-4 sm:p-5 flex flex-col gap-3">
         {/* Title */}
-        <h3 className="text-sm font-semibold text-gray-800 line-clamp-2 hover:text-dusty-blue-500 transition-colors cursor-pointer">
+        <h3 className="text-sm sm:text-base font-semibold text-gray-800 line-clamp-2 hover:text-dusty-blue-500 transition-colors cursor-pointer">
           {title}
         </h3>
 
@@ -143,12 +144,12 @@ export default function ProductCard({
 
         {/* Price Section */}
         <div className="flex items-baseline gap-2">
-          <span className="text-lg font-bold text-gray-900">
-            ${price.toFixed(2)}
+          <span className="text-base sm:text-lg font-bold text-gray-900">
+            {formatINR(price)}
           </span>
           {originalPrice && originalPrice > price && (
             <span className="text-sm text-gray-500 line-through">
-              ${originalPrice.toFixed(2)}
+              {formatINR(originalPrice)}
             </span>
           )}
         </div>
@@ -157,7 +158,7 @@ export default function ProductCard({
         <button
           onClick={handleAddToCart}
           disabled={isAddingToCart}
-          className="mt-auto w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-dusty-blue-500 to-muted-teal-600 text-white rounded-lg font-semibold text-sm hover:from-dusty-blue-600 hover:to-muted-teal-600 transition-all duration-200 disabled:opacity-75 shadow-soft hover:shadow-md"
+          className="mt-auto w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-dusty-blue-500 to-muted-teal-600 text-white rounded-lg font-semibold text-sm sm:text-base hover:from-dusty-blue-600 hover:to-muted-teal-600 transition-all duration-200 disabled:opacity-75 shadow-soft hover:shadow-md"
         >
           <ShoppingCart size={18} />
           <span>{isAddingToCart ? 'Added!' : 'Add to Cart'}</span>
